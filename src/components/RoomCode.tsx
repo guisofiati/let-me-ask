@@ -11,6 +11,7 @@ export function RoomCode(props: RoomCodeProps) {
     function copyRoomCodeToClipboard() {
         navigator.clipboard.writeText(props.code)
     }
+    
     return (
         <button className="room-code" onClick={copyRoomCodeToClipboard}>
             <div>
